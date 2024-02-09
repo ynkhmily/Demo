@@ -1,0 +1,79 @@
+/*
+for( var i = 1;i <= 10;i = i + 1){
+    print i;
+    if( i == 5)     continue;
+    if( i == 9)     break;
+}
+*/
+/*
+class A {
+  method() {
+    print "A method";
+  }
+}
+
+class B < A {
+  method() {
+    super.method();
+    print "B method";
+  }
+}
+var a = B();
+a.method();
+*/
+
+
+/*
+var a = "global";
+{
+  fun showA() {
+    print a;
+  }
+
+  showA();
+  var a = "block";
+  showA();
+}
+*/
+
+/*
+var i = 1;
+while(i < 10){
+    i = i + 1;
+    if(i == 5) continue;
+    print i;
+}
+*/
+
+
+/*
+for(var i = 0;i < 10;i = i + 1){
+    if( i == 5) continue;
+    print i;
+}
+*/
+
+
+
+fun fun1(){
+    var a = 1;
+    fun fun2(){
+        a = a + 1;
+        print a;
+    }
+    return fun2;
+}
+var b = fun1();
+b();
+
+/*
+fun fun1(fn) {
+  for (var i = 1; i <= 3; i = i + 1) {
+    fn(i);
+  }
+}
+
+fun1(fun (a) {
+  print a;
+});
+*/
